@@ -1,5 +1,5 @@
 import type {Request, Response} from 'express'
 
 export function checkHealth(req: Request, res: Response) {
-    res.send('server is ok')
+    res.status(200).send('ok')
 }
